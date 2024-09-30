@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="galerie.css">
+<meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- assurer que les pages fonctionnent bien dans une grande variété de tailles et d'orientations d'écran -->
+<script type="text/javascript" src="js/index.js"></script> <!--referencer fichiers javascript-->
+<title>Danseurs de Rue - Galerie</title>
+<link rel="shortcut icon" type="image/png" href="images/hiphopdancer.png"/><!--icône qui apparaît à côter du titre de la page-->
+<link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+
+</head>
+<body>
+    <div id="sectionArticles">
+
+   <header>
+      <div id="leLogoDuMenu"><a href="index.html"><img src="images/logoddr.png" alt="Logo" class="imgPngShadow"></a></div>
+      <div id="titresDuMenu">
+        <a href="index.html#sectionVideo" class="textShadow">Vidéo</a>
+        <a href="index.html#sectionArticles" class="textShadow">Article</a>
+          <a href="index.html" class="textShadow">Accueil</a>
+      </div>
+  </header>
+
+
+  <h1 id="galerieTitre">Galerie de photos</h1>
+
+   <div id="contenuDeLaPage">
+<!-- Titre -->
+<p class="titre"> Châtelet-Les-Halles</p>
+
+<table>
+ <!-- Première ligne d'images -->
+<tr>
+ <td><img src="images/un.jpg" class="img" onclick="unapparait()"><section class="legend"><p>15:58</p><p>12/10/2022</p></section></td>   
+ <td><img src="images/deux.jpg" class="img" onclick="deuxapparait()"><section class="legend"><p>16:01</p><p>12/10/2022</p></section></td> 
+ <td><img src="images/trois.jpg" class="img" onclick="troisapparait()"><section class="legend"><p>16:04</p><p>12/10/2022</p></section> </td> 
+</tr> 
+</table>
+
+<!-- Titre -->
+<p class="titre">Châtelet-Les-Halles (Centre Pampidou)</p>
+
+<table>
+ <!-- Deuxième ligne d'images -->
+ <tr>
+    <td><img src="images/quatre.jpg" class="img" onclick="quatreapparait()"><section class="legend"><p>16:17</p><p>12/10/2022</p></section> </td>   
+    <td> <img src="images/cinq.jpg" class="img" onclick="cinqapparait()"><section class="legend"><p>16:21</p><p>12/10/2022</p></section></td> 
+    <td><img src="images/six.jpg" class="img" onclick="sixapparait()"><section class="legend"><p>16:24</p><p>12/10/2022</p></section> </td> 
+   </tr> 
+</table>
+
+<!-- Titre -->
+<p class="titre">Bibliothèque François-Mitterand</p>
+
+<table>
+ <!-- Deuxième ligne d'images -->
+ <tr>
+    <td><img src="images/sept.jpg" class="img" onclick="septapparait()"><section class="legend"><p>16:57</p><p>12/10/2022</p></section> </td>   
+    <td><img src="images/huit.jpg" class="img" onclick="huitapparait()"><section class="legend"><p>17:03</p><p>12/10/2022</p></section></td> 
+    <td><img src="images/neuf.jpg" class="img" onclick="neufapparait()"><section class="legend"><p>17:08</p><p>12/10/2022</p></section> </td> 
+   </tr> 
+   <tr>
+    <td><img src="images/dix.jpg" class="img" onclick="dixapparait()"><section class="legend"><p>17:19</p><p>12/10/2022</p></section> </td>   
+    <td> <img src="images/onze.jpg" class="img" onclick="onzeapparait()"><section class="legend"><p>17:22</p><p>12/10/2022</p></section></td> 
+    <td><img src="images/douze.jpg" class="img" onclick="douzeapparait()"><section class="legend"><p>17:27</p><p>12/10/2022</p></section> </td> 
+   </tr> 
+</table>
+</div>
+
+<footer>
+   <div id="logoFooter">
+       <img src="images/logoddr.png" alt="Logo" class="imgPngShadow" width="200px" height="auto">
+   </div>
+
+   <div id="nomsFooter">
+       <p class="textShadow">
+           Yasmine BADAROU <br>
+           Rose MALDONADO <br>
+           Bryan ROY <br>
+           Théo TAUBIN <br>
+       </p>
+   </div>
+
+   <div id="signatureFooter">
+       <p class="textShadow">SAE 302</p> <br>
+       <p class="textShadow">Les danseurs de Rue | Copyright © 2022</p>
+   </div>
+</footer>
+
+<img src="images/un.jpg" class="img" id="un" onclick="undispparait ()">
+<img src="images/deux.jpg" class="img" id="deux" onclick="deuxdispparait()">
+<img src="images/trois.jpg" class="img" id="trois" onclick="troisdispparait()">
+<img src="images/quatre.jpg" class="img" id="quatre" onclick="quatredispparait()">
+<img src="images/cinq.jpg" class="img" id="cinq" onclick="cinqdispparait()">
+<img src="images/six.jpg" class="img" id="six" onclick="sixdispparait()">
+<img src="images/sept.jpg" class="img" id="sept" onclick="septdispparait()">
+<img src="images/huit.jpg" class="img" id="huit" onclick="huitdispparait()">
+<img src="images/neuf.jpg" class="img" id="neuf" onclick="neufdispparait()">
+<img src="images/dix.jpg" class="img" id="dix" onclick="dixdispparait()">
+<img src="images/onze.jpg" class="img" id="onze" onclick="onzedispparait()">
+<img src="images/douze.jpg" class="img" id="douze" onclick="douzedispparait()">
+</body>
+</html>

@@ -1,0 +1,409 @@
+* {
+    scroll-behavior: smooth;
+    font-family: "Century Gothic", century-gothic, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Century Gothic", century-gothic, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    text-shadow: rgba(128, 128, 128, 0.374) 1px 1px 1px;
+}
+/*PROPRIETES PARTAGES PAR PLUSIEURS ELEMENTS*/
+.textShadow {
+    text-shadow: black 2px 2px 10px;
+}
+
+.textShadow2 {
+    text-shadow: rgba(0, 0, 0, 0.164) 2px 2px 10px;  
+}
+
+.imgPngShadow {
+    -webkit-filter: drop-shadow(2px 1px 10px #000000);
+    filter: drop-shadow(2px 1px 10px #000000);
+}
+/*FIN DES PROPRIETES PARTAGES PAR PLUSIEURS ELEMENTS*/
+
+/*PARTIE DE LA VIDEO, DU HEADER*/
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#leLogoDuMenu {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-left: 2%;
+}
+
+header div img {
+    width: 300px;
+    height: auto;
+}
+
+header div a {
+    color: #fafafa;
+    font-size: 27px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    position: relative;
+    transition: all 0.2s ease-out;
+}
+
+header div a::before {
+    content: '';
+    background-color: #2203b0;
+    position: absolute;
+    left: 0;
+    bottom: 28px;
+    width: 100%;
+    z-index: -1;
+}
+
+header div a:hover::before {
+    bottom: 28px;
+    height: 8px;
+}
+  
+#titresDuMenu {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3%;
+    padding-top: 30px;
+}
+
+#sectionSlider {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-height: 100vh;
+    overflow:hidden;
+    z-index: -10;
+}
+
+#sectionSlider img {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45px;
+    height: auto;
+    -webkit-filter: drop-shadow(2px 1px 10px #000000);
+    filter: drop-shadow(2px 1px 10px #000000);
+    transition: all 0.2s ease-out;
+}
+
+#sectionSlider img:hover {
+    cursor: pointer;
+    -webkit-filter: drop-shadow(2px 1px 10px #fafafa);
+    filter: drop-shadow(2px 1px 10px #fafafa);
+    width: 50px;
+    height: auto;
+}
+
+#titreDuDocumentaire {
+    position: absolute;
+    width: 100%;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#sectionSlider h3 {
+    color: #fafafa;
+    font-size: 40px;
+    text-align: center;
+}
+/*FIN DE PARTIE DE LA VIDEO, DU HEADER*/
+
+/*PARTIE ARTICLES*/
+#sectionArticles {
+    margin-top: 90vh;
+    position: absolute;
+}
+
+#premierePartie {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#titreDeLarticle {
+    font-size: 60px;
+    text-transform: uppercase;
+    width: 40%;
+    padding: 40px 0px 0px 120px;
+    font-weight: bolder;
+    color: #2203b0;
+    line-height: 80px;
+    text-shadow: 5px 5px 1px #c2c2c25a;
+}
+
+.texteDeLarticle {
+    font-size: 25px;
+    width: 60%;
+    padding: 20px 150px 20px 50px;
+    text-align: justify;
+}
+
+.deuxiemePartie {
+    padding: 10px 120px;
+}
+
+.deuxiemePartie h3 {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.deuxiemePartie p {
+    font-size: 25px;
+    text-align: justify;
+    padding-right: 30px;
+    margin-bottom: 10px;
+}
+/*FIN DE PARTIE ARTICLES*/
+
+/*SECTION DE LA VIDEO*/
+#sectionVideo {
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3f3f3;
+    padding-bottom: 100px;
+    border-radius: 50px;
+    margin-top: 70px;
+}
+
+#sectionVideo h1 {
+    margin-bottom: 10px;
+    font-size: 50px;
+    font-weight: bolder;
+    color: #2203b0;
+    text-transform: uppercase;
+    text-shadow: #0d006e3d 2px 2px 10px;
+}
+
+#traitBleu {
+    background-color: #2203b0;
+    height: 5px;
+    width: 700px;
+    top: 0;
+    margin-bottom: 50px;
+}
+
+iframe {
+    border-radius: 20px;
+}
+/*FIN DE SECTION DE LA VIDEO*/
+
+/*PARTIE ARTICLE ORIGINES DU HIP-HOP*/
+#imageEtTexte {
+    padding: 10px 100px 0px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#sectionArticleHipHop h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #2203b0;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 13px;
+    text-shadow: 5px 5px 1px #c2c2c25a;
+}
+
+#imageBox {
+    max-width: 40%;
+    align-items: center;
+    display: flex;
+}
+
+#leTexteHipHop {
+    font-size: 25px;
+    
+    text-align: justify;
+    padding-left: 40px;
+    padding-right: 50px;
+    max-width: 60%;
+}
+
+#sectionArticleHipHop img {
+    -webkit-filter: drop-shadow(2px 1px 10px #977069);
+    filter: drop-shadow(2px 1px 10px #977069);
+}
+/*FIN DE PARTIE ARTICLE ORIGINE DU HIPHOP*/
+
+/*PARTIE ORIGINE DE LA KPOP*/
+.sectionOrigineKpop {
+    display: flex;
+    padding: 15px 100px;
+    margin-bottom: 60px;
+}
+
+.texteOrigineKpop {
+    width: 60%;
+    padding-right: 30px;
+    font-size: 25px;
+    
+    text-align: justify;
+}
+
+.imageOrigineKpop {
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+#partieKpop h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #2203b0;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-shadow: 5px 5px 1px #c6c6ff5a;
+}
+/*FIN DE LA PARTIE ORIGINE DE LA KPOP*/
+
+/*PARTIE PORTRAIT D'ALIDA*/
+#sectionAlida {
+    background-color: #0000000b;
+    padding-top: 1px;
+    padding-bottom: 50px;
+    border-radius: 50px 50px 0px 0px;
+}
+
+#sectionAlida img {
+    margin: auto;
+    display: block;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    box-shadow: gray 2px 2px 10px;
+}
+
+#sectionAlida h1 {
+    font-size: 60px;
+    text-transform: uppercase; 
+    font-weight: bolder;
+    color: #2203b0;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    text-shadow: 5px 5px 1px #c2c2c25a;
+}
+
+.column {
+    width: 33.33%;
+    margin: 20px;
+    text-align: justify;
+    font-size: 25px;
+  }
+  
+  /* Clear floats after the columns */
+ #textesAlida:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  #textesAlida {
+    padding-left: 6%;
+    padding-right: 6%;
+    display: flex;
+  }
+/*FIN DE LA PARTIE PORTRAIT D'ALIDA*/
+
+/*FOOTER*/
+footer {
+    display: flex;
+    background-color: #2203b0;
+    height: 250px;
+    color: #fafafa;
+}
+
+#logoFooter {
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nomsFooter {
+    width: 33.33%;
+    text-align: center;
+    line-height: 30px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#signatureFooter {
+    width: 33.33%;
+    text-align: center;
+    line-height: 5px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+/*FIN DU FOOTER*/
+
+/*SIGNATURES*/
+.signature {
+    color: #0000005b;
+    font-size: 20px;
+    text-shadow: none;
+}
+
+.signature2 {
+    color: #0000005b;
+    font-size: 20px!important;
+    text-shadow: none;
+}
+/*FIN SIGANTURES*/
+
+/*PARTIE AUDIO*/
+#partieAudio {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    align-items: center;
+    color: #2203b0;
+    font-weight: 600;
+    padding-right: 20px;
+}
+
+#partieAudio span {
+    margin-right: 50px;
+    font-size: 30px;
+}
+
+audio {
+    width: 550px;
+    transition: all 0.2s ease-out;
+}
+
+audio:hover {
+    -webkit-filter: drop-shadow(2px 1px 10px #00009a84);
+    filter: drop-shadow(2px 1px 10px #00009a84);
+}
+
+audio::-webkit-media-controls-play-button,
+     audio::-webkit-media-controls-panel {
+     background-color: #e5dfff;
+}
+/*FIN PARTIE AUDIO*/
